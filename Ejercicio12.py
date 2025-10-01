@@ -15,7 +15,7 @@ precioNoDia = 3.49*0.6
 
 barrasVend = int(input("Cuantas barras has vendido que no son del dia: "))
 
-print(f"El precio normal es {precioDia}, con el descuento cada barra vale {precioNoDia}. El beneficio del dia ha sido {barrasVend*precioNoDia}.")
+print(f"El precio normal es {precioDia}, con el descuento cada barra vale {precioNoDia}. El beneficio del dia con barras no frescas ha sido {barrasVend*precioNoDia}.")
 
 
 
