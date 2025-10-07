@@ -7,3 +7,6 @@ como el número introducido
 
 '''
 
+nombreUsuario = input("Cual es tu nombre: ")
+numInt = int(input("Cuantas veces quieres ver tu nombre: "))
+print(f"{nombreUsuario}\n"*numInt)
