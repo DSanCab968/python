@@ -6,3 +6,7 @@ una vocal, y después muestre por pantalla la misma frase pero con la vocal
 introducida en mayúscula
 
 '''
+
+frase = input("Dime una frase: ")
+vocal = input("Dime una vocal: ")
+print(frase.replace(vocal.lower(),vocal.upper()))
