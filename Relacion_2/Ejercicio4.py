@@ -8,3 +8,7 @@ programa que pregunte por un número de teléfono con este formato y muestre por
 pantalla el número de teléfono sin el prefijo y la extensión.
 
 '''
+
+telefono = input("Dime el un telefono con prefijo y extension separado por guiones: ")
+
+print(f"El numero de telefono es: ",{telefono[4:13]})
