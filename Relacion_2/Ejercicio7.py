@@ -6,3 +6,8 @@ muestre por pantalla otro correo electrónico con el mismo nombre (la parte dela
 de la arroba @) pero con dominio ceu.es
 
 '''
+
+correoFull = input("Dime tu correo electronico: ")
+caracter = "@"
+correoUser = correoFull.split(caracter)[0]
+print(f"{correoUser}@ceu.es")
