@@ -7,3 +7,7 @@ letras, donde <NOMBRE> es el nombre de usuario en mayúsculas y <n> es el
 número de letras que tienen el nombre.
 
 '''
+
+nombreUsuario = input("Cual es tu nombre: ")
+numLetras = len(nombreUsuario)
+print(f"{nombreUsuario} tiene {numLetras} letras.")
