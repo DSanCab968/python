@@ -9,3 +9,17 @@ que le corresponde.
 
 
 '''
+
+nombreUser = input("Dime tu nombre: ")
+sexoUser = input("Eres hombre o mujer? Escribe h para hombre o m para mujer: ")
+
+if sexoUser.upper() == "H":
+    if nombreUser[0] >= "N":
+        print("Eres del grupo A")
+    else: print("Eres del grupo B")
+elif sexoUser.upper() == "M":
+    if nombreUser[0] <= "M":
+        print("Eres del grupo A")
+    else: print("Eres del grupo B")
+
+    
