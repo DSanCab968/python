@@ -15,3 +15,14 @@ pizza elegida es vegetariana o no y todos los ingredientes que lleva.
 
 
 '''
+
+tipo = input("Quieres pizza vegetariana? [s/n]: ")
+
+if tipo == "s":
+    print("Tomate, mozzarella y: [pimiento o tofu]")
+    ingredienteVeg = input("Elige: [pimiento/tofu]")
+    print(f"La pizza es vegetariana y lleva tomate, mozzarella y {ingredienteVeg}.")
+else:
+    print("Tomate, mozzarella y: [peperoni, jamon, salmon]")
+    ingredienteNoVeg = input("Elige: [peperoni/jamon/salmon]")
+    print(f"La pizza no es vegetariana y lleva tomate, mozzarella y {ingredienteNoVeg}.")
