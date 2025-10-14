@@ -8,3 +8,12 @@ mostrar el precio de la entrada. Si el cliente es menor de 4 años puede entrar 
 si tiene entre 4 y 18 años debe pagar 5€ y si es mayor de 18 años, 10€.
 
 '''
+
+edad = int(input("Dime la edad del cliente: "))
+
+if edad < 4:
+    print("La entrada es gratuita")
+elif edad >= 4 and edad <= 18:
+    print("La entrada cuesta 5€")
+elif edad > 18:
+    print("La entrada cuesta 10€")
