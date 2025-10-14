@@ -19,3 +19,17 @@ rendimiento, así como la cantidad de dinero que recibirá el usuario.
 
 
 '''
+
+puntuacion = float(input("Dime tu puntuacion: "))
+
+if puntuacion == 0.0:
+    nivel = "Inaceptable"
+    print(f"Tu nivel es {nivel} y vas a cobrar {2400*0.0} extra.")
+elif puntuacion == 0.4:
+    nivel = "Aceptable"
+    print(f"Tu nivel es {nivel} y vas a cobrar {2400*0.4} extra.")
+elif puntuacion == 0.6:
+    nivel = "Meritorio"
+    print(f"Tu nivel es {nivel} y vas a cobrar {2400*0.6} extra.")
+else:
+    print("Puntuacion no aceptada")
