@@ -6,3 +6,11 @@ Escribir un programa que muestre el eco de todo lo que el usuario introduzca has
 que el usuario escriba “salir” que terminará.
 
 '''
+
+while True:
+    texto = input("Di algo: ")
+    if texto == "Salir" or texto == "salir":
+        print("Saliendo")
+        break
+    else:
+        print(texto)
