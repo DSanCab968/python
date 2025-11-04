@@ -11,4 +11,12 @@ notas introducidas por el usuario.
 
 '''
 
+asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+notas = []
 
+for i in range(0,len(asignaturas)):
+    nota = (input(f"Dime la nota que sacaste en {asignaturas[i]}: "))
+    notas.append(nota)
+
+for j in range(0,len(asignaturas)):   
+    print(f"En {asignaturas[j]} he sacado un {notas[j]}.")
