@@ -8,4 +8,9 @@ pantalla el mensaje Yo estudio <asignatura>, donde <asignatura> es cada
 una de las asignaturas de la lista.
 
 '''
+asignaturas = ["Matemáticas", "Física", "Química", "Historia", "Lengua"]
+
+for i in range(0,len(asignaturas)):
+    print(f"Yo estudio {asignaturas[i]}.")
+
 
