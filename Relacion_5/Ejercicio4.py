@@ -8,3 +8,16 @@ a mayor
 
 '''
 
+while True:
+    num = int(input("Introduzca los ganadores de la loteria: "))
+              
+    if num == 000:
+        break
+    else:
+        numeros = []
+        numeros.append(num)
+
+print(numeros.sort())
+
+
+
