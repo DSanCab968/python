@@ -1,0 +1,21 @@
+
+Listas (list)
+
+-Se escriben con corchetes: [1, 2, 3].
+-Son mutables (pueden cambiarse).
+-Admiten distintos tipos de datos.
+-Uso general en la mayoría de los programas.
+
+Tuplas (tuple)
+
+-Se escriben con paréntesis: (1, 2, 3).
+-Son inmutables (no pueden modificarse).
+-Admiten distintos tipos de datos.
+-Se usan cuando los datos no deben cambiar.
+
+Arrays (array del módulo array)
+
+-Se crean con import array: array.array('i', [1, 2, 3]).
+-Son mutables.
+-Solo permiten un tipo de dato (por ejemplo, todos enteros).
+-Se usan para cálculos numéricos más eficientes.

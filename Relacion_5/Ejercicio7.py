@@ -7,3 +7,22 @@ resultante
 
 '''
 
+abecedario = list("abcdefghijklmnopqrstuvwxyz")
+
+resultado = []
+for i, letra in enumerate(abecedario):
+    if (i + 1) % 3 != 0:
+        resultado.append(letra)
+
+print(resultado)
+
+#letra es el valor e i recorre la posicion porque el enumerate da como un indice con pos y val
+'''
+Otra forma mas compacta
+
+resultado = [
+    letra for i, letra in enumerate(abecedario) if (i + 1) % 3 != 0
+    ]
+'''
+
+
