@@ -11,9 +11,17 @@ numeros = []
 i=1
 
 while i <= 10:
-    numeros.append(str(i))
+    numeros.append(i)
     i+=1
 
-#(acabar)
+print(numeros)
+
+numerosRev = []
+for a in numeros[::-1]:
+    numerosRev.append(a)
+
+print(numerosRev)
+    
+
 
 
