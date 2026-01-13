@@ -8,3 +8,15 @@ teléfono es <teléfono>.
 
 '''
 
+persona={}
+
+nombre = input("Dime tu nombre: ")
+persona["nombre"]=nombre
+edad = input("Dime tu edad: ")
+persona["edad"]=edad
+direccion = input("Dime tu direccion: ")
+persona["direccion"]=direccion
+telefono = input("Dime tu telefono: ")
+persona["telefono"]=telefono
+
+print(f"{persona['nombre']} tiene {persona['edad']} años, vive en {persona['direccion']} y su número de teléfono es {persona['telefono']}")
