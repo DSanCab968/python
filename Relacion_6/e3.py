@@ -14,3 +14,19 @@ Naranja 0.70
 
 '''
 
+fruta={
+
+    "platano":1.35,
+    "manzana":0.80,
+    "pera":0.85,
+    "naranja":0.70
+}
+
+nFruta = input("Dime que fruta quieres: ")
+kgFruta = int(input("Cuantos kilos quieres: "))
+
+if nFruta in fruta:
+    print(f"EL precio total es {kgFruta*fruta[nFruta]}")
+else:
+    print("Se nos ha acabado esa fruta")
+
