@@ -7,3 +7,16 @@ símbolo o un mensaje de aviso si la divisa no está en el diccionario.
 
 '''
 
+dinero = {
+    "Euro":"€",
+    "Dollar":"$",
+    "Yen":"¥"
+}
+
+moneda = input("Que moneda quieres: ")
+
+if moneda in dinero:
+    print(f"El símbolo del {moneda} es {dinero[moneda]}")
+else:
+    print("No tenemos esa moneda")
+  
