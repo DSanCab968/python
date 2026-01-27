@@ -17,3 +17,27 @@ Total   Coste
 
 '''
 
+cesta = {}
+
+while True:
+    articulo = input("Introduce el nombre del artículo (o 'fin' para terminar): ")
+    if articulo.lower() == 'fin':
+        break
+
+    while True:
+        try:
+            precio = float(input(f"Introduce el precio de {articulo}: "))
+            break
+        except ValueError:
+            print("Por favor, introduce un número válido para el precio.")
+
+    cesta[articulo] = precio
+
+print("\nLista de la compra")
+total = 0
+
+for articulo, precio in cesta.items():
+    print(f"{articulo}\t{precio:.2f} €")
+    total += precio
+
+print(f"Total\t{total:.2f} €")

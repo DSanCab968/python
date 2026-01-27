@@ -13,3 +13,52 @@ cantidad pendiente de cobro.
 
 '''
 
+facturas = {}
+
+cobrado = 0
+
+while True:
+    print("\nOpciones:")
+    print("1. Añadir nueva factura")
+    print("2. Pagar factura")
+    print("3. Terminar")
+    
+    opcion = input("Elige una opción (1/2/3): ").strip()
+    
+    if opcion == "1":
+     
+        numero = input("Introduce el número de la factura: ").strip()
+        if numero in facturas:
+            print("Esa factura ya existe.")
+            continue
+        while True:
+            try:
+                coste = float(input("Introduce el coste de la factura: "))
+                break
+            except ValueError:
+                print("Introduce un número válido para el coste.")
+        facturas[numero] = coste
+        print(f"Factura {numero} añadida con coste {coste:.2f} €.")
+        
+    elif opcion == "2":
+        
+        numero = input("Introduce el número de la factura a pagar: ").strip()
+        if numero in facturas:
+            cobrado += facturas[numero] 
+            del facturas[numero]          
+            print(f"Factura {numero} pagada.")
+        else:
+            print("No existe esa factura.")
+            
+    elif opcion == "3":
+     
+        print("Programa terminado.")
+        break
+    else:
+        print("Opción no válida. Intenta de nuevo.")
+        continue
+    
+    
+    pendiente = sum(facturas.values())
+    print(f"\nCantidad cobrada: {cobrado:.2f} €")
+    print(f"Cantidad pendiente de cobro: {pendiente:.2f} €")

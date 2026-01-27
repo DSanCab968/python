@@ -30,3 +30,38 @@ decir, un diccionario como el siguiente
 'carmen@mail.com', 'teléfono': '667677855', 'descuento': 15.7}}
 
 '''
+
+# Cadena de ejemplo
+directorio = ("nif;nombre;email;teléfono;descuento\n"
+              "01234567L;Luis González;luisgonzalez@mail.com;656343576;12.5\n"
+              "71476342J;Macarena Ramírez;macarena@mail.com;692839321;8\n"
+              "63823376M;Juan José Martínez;juanjo@mail.com;664888233;5.2\n"
+              "98376547F;Carmen Sánchez;carmen@mail.com;667677855;15.7")
+
+# Separar las líneas
+lineas = directorio.split("\n")
+
+# Obtener los nombres de los campos (excluyendo 'nif' que será la clave principal)
+campos = lineas[0].split(";")[1:]  # ['nombre', 'email', 'teléfono', 'descuento']
+
+# Crear diccionario principal
+clientes = {}
+
+for linea in lineas[1:]:
+    datos = linea.split(";")
+    nif = datos[0]  # La clave del diccionario
+    info_cliente = {}
+    
+    # Añadir el resto de campos
+    for i, campo in enumerate(campos):
+        valor = datos[i+1]
+        # Convertir descuento a float
+        if campo == "descuento":
+            valor = float(valor)
+        info_cliente[campo] = valor
+    
+    clientes[nif] = info_cliente
+
+# Mostrar resultado
+from pprint import pprint
+pprint(clientes)
